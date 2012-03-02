@@ -1,5 +1,5 @@
 .DS_Store
-ext/Makefile
-ext/fraction.o
-ext/fraction.bundle
+Makefile
+*.o
+*.bundle
 *.gem
