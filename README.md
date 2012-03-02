@@ -19,20 +19,12 @@ Install it with `gem`:
 Using this gem is easy:
 
     require 'fraction'
-    num, den = 0.33.to_fraction   # num==1, den==3
-    num, den = 0.33.fraction # legacy name also works
+    fraction = 0.33.to_fraction   # Fraction object
+    fraction.numerator == 1
+    fraction.denominator == 3
 
-You can get the error:
-
-    num,den,err = 0.33.to_fraction   #=> [1, 3, -0.0033333333333333]
-
-you can choose a different maximum denominator than the default value of 10:
-
-    num, den = 0.51.to_fraction(100) #=> [51, 100, 0.0]
-
-There is also whole fraction support, which factors out any whole numbers:
-
-    whole, num, den, error = 3.5.to_whole_fraction #=> [3, 1, 2, 0]
+You can get the HTML entities associated with the fraction. If it can't find any, it will return the fraction in the format n/d
+    fraction.to_html # 1/3
 
 The best part of this gem over others is the speed:
 
