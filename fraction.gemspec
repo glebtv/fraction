@@ -6,6 +6,6 @@ spec = Gem::Specification.new do |s|
 	s.version = '0.3.2'
 	s.summary = 'Provides a "to_fraction" method on all ruby floats.'
 	s.description = 'Provides "to_fraction" and to_whole_fraction methods on all ruby floats and numerics.'
-	s.extensions << 'extconf.rb'
-	s.files = %w(fraction.c README.md)
+	s.extensions << 'ext/extconf.rb'
+	s.files = %w(ext/fraction.c README.md)
 end
