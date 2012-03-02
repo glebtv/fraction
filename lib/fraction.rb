@@ -13,7 +13,7 @@ class Fraction
       when 4 then "&frac14;"
       when 5 then "&#x2155;"
       when 6 then "&#x2159;"
-      when 8 then "&#x215E;"
+      when 8 then "&#x215B;"
       end
 
     when 2 then
