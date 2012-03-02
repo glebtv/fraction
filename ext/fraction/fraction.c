@@ -59,7 +59,7 @@ void core_fraction(double val, long maxden, long * n, long * d, double * e)
    *e = val - ((double)m11 / (double)m21);
 }
 
-VALUE create_fraction_from(int argc, VALUE * argv, VALUE self)
+VALUE fraction_create_fraction_from(int argc, VALUE * argv, VALUE self)
 {
    VALUE fraction = rb_class_new_instance(0, NULL, rb_cFraction);
 
@@ -89,7 +89,7 @@ void Init_fraction() {
 
    rb_cFraction = rb_define_class("Fraction", rb_cObject);
 
-   rb_define_method(rb_cNumeric, "to_fraction", create_fraction_from, -1);
-   rb_define_method(rb_cFloat,   "to_fraction", create_fraction_from, -1);
+   rb_define_method(rb_cNumeric, "to_fraction", fraction_create_fraction_from, -1);
+   rb_define_method(rb_cFloat,   "to_fraction", fraction_create_fraction_from, -1);
 }
 

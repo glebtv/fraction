@@ -1,4 +1,4 @@
-require File.dirname(__FILE__) + '/ext/fraction'
+require 'fraction/fraction'
 
 class Fraction
   attr_reader :numerator, :denominator
