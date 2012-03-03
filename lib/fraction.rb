@@ -1,7 +1,7 @@
 require 'fraction/fraction'
 
 class Fraction
-  attr_reader :numerator, :denominator
+  attr_reader :numerator, :denominator, :error
 
   def to_html
     entity = case self.numerator

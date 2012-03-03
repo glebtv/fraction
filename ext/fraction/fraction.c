@@ -80,7 +80,7 @@ VALUE fraction_create_fraction_from(int argc, VALUE * argv, VALUE self)
 
    rb_iv_set(fraction, "@numerator", numer1);
    rb_iv_set(fraction, "@denominator", denom1);
-   rb_iv_set(fraction, "@result", err1);
+   rb_iv_set(fraction, "@error", err1);
 
    return fraction;
 }
