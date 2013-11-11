@@ -32,7 +32,7 @@ class Fraction
     when 4 then "&#x2158;"
 
     when 5 then
-      case self.denomiator
+      case self.denominator
       when 6 then "&#x215A;"
       when 8 then "&#x215D;"
       end
